@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Hacker Linktree</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS styles for centering and effects */
+        body {
+            text-align: center;
+            min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .center {
+            flex-grow: 1; /* Allow content to push footer to the bottom */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #shockingText {
+            font-size: 24px;
+            color: rgb(120, 15, 190);
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 1px solid white; /* Typing cursor effect */
+        }
+
+        /* Keyframes animation for typing effect */
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        /* Oval image effect */
+        #profileImage {
+            border-radius: 50%;
+            border: 5px solid rgb(120, 15, 190);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SmukX</h1><br><br>
+    </header>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <main>
+        <!-- Oval image effect -->
+        <center><img src="image.jpg" id="profileImage" width="70%"/></center>
+        <br>
+        <div class="center">
+            <div id="shockingText">Pentester and Security Researcher</div>
+        </div>
+    </main>
+    <div id="linksContainer"></div>
+    <p>Love to exploit and write code to break things.
+        You can find my socials.</p>
+    <main>
+        <div class="links">
+            <a href="https://github.com/Whitecat18" target="_blank">GitHub</a>
+            <a href="https://twitter.com/Smukx07" target="_blank">Twitter</a>
+            <a href="https://youtube.com/" target="_blank">Youtube</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright&copy; 2023 Smukx Page</p>
+    </footer>
+
+    <script>
+        const linksContainer = document.getElementById('linksContainer');
+        const shockingText = document.getElementById('shockingText');
+        const profileImage = document.getElementById('profileImage');
+
+        function addTypingEffect() {
+            linksContainer.innerHTML = '';
+            shockingText.style.display = 'block';
+            profileImage.style.display = 'none';
+
+            const textLength = shockingText.textContent.length;
+            const typingDuration = textLength * 70; 
+
+            // Apply the typing animation
+            shockingText.style.animation = `typing ${typingDuration}ms steps(${textLength})`;
+
+            setTimeout(() => {
+                shockingText.style.animation = '';
+                shockingText.style.width = '0';
+                setTimeout(addTypingEffect, 1); // Wait for 1 second before starting again
+            }, 6000); 
+        }
+
+        addTypingEffect();
+    </script>
+</body>
+</html>
