@@ -1,7 +1,7 @@
 const logotext = "SMUKX";
 const meta = {
     title: "Smukx Website",
-    description: "I am a hobbiest programmer with an pentesting skill set. i write secure code",
+    description: "I am a hobbiest programmer with an pentesting skill set. i write secure codes and safeguard systems",
 };
 
 const introdata = {
@@ -11,14 +11,15 @@ const introdata = {
         second: "I do Security Research",
         third: "I Exploit Malware Stuffs",
     },
-    description: "I am an hobbiest programmer and Pentester. I write secure code.",
+    description: "I am an hobbiest programmer and Pentester. I write secure codes and safeguard systems.",
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 
 const dataabout = {
     title: "About me",
-    aboutme: "Im 5mukx, An 19 year guy interested in Computer Security Field and Artificial Intelligence. I Do Both offensive and defensive tests. To know more follow me at github and Twitter . If you like my work, leave a ★ at My Repositary  so that i can Cheer up !"
+    aboutme: "Im 5mukx, An 19 year guy interested in Computer Security and Artificial Intelligence. I Do Both offensive and defensive tests. To know more follow me at github and Twitter . If you like my work, leave a ★ at My Repositary  so that i can Cheer up !"
 };
+
 const worktimeline = [{
         jobtitle: "Hardware debugger",
         where: "",
@@ -78,7 +79,7 @@ const services = [{
 ];
 
 const dataportfolio = [{
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Windows_PowerShell_1.0_PD.png/567px-Windows_PowerShell_1.0_PD.png",
+        img: "https://raw.githubusercontent.com/Whitecat18/Powershell-Scripts-for-Hackers-and-Pentesters/main/source/powershell_scripts.png",
         description: "Powershell scripts and commands to Pentest Win Machine.",
         link: "https://github.com/Whitecat18/Powershell-Scripts-for-Hackers-and-Pentesters.git",
     },
@@ -96,13 +97,17 @@ const dataportfolio = [{
         img: "https://raw.githubusercontent.com/Whitecat18/windows-10-Activator/main/image/Intro.PNG",
         description: "An Windows 10 activator that activates your Windows within minues",
         link: "https://github.com/Whitecat18/windows-10-Activator.git"
+    },
+    {
+        img: "https://github.com/Whitecat18/javahexor/blob/main/share/javahexor.png?raw=true",
+        description: "An Javascript program to find anyone's Location and sends the output to the telegram Bot",
+        link: "https://github.com/Whitecat18/javahexor.git"
     }
 
 ];
 
 const contactConfig = {
     YOUR_EMAIL: "smukx@duck.com",
- //   YOUR_FONE: "(555)123-4567",
     description: "You can contact me via Twitter or Discord. Please Dont spam there guys. ",
     github: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
 };
@@ -110,7 +115,6 @@ const contactConfig = {
 const socialprofils = {
     github: "https://github.com/Whitecat18",
     twitter: "https://twitter.com/Smukx07",
-   // youtube: "https://www.youtube.com/@smukx-qn1fs"
     youtube: "https://www.smukx.site"
 };
 export {
